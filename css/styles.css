@@ -13,9 +13,7 @@
 	margin-bottom: 30px;
 }
 
-.blockquote{
-	font-weight: bold;
-}
+
 
 .recents{
   display: grid;
@@ -59,27 +57,27 @@
   color: floralwhite; }
 
   #demo{
-  background: linear-gradient(to bottom right ,#56A2CC,#FCF4A3);
-  	width:550px;
+  	width:600px;
 	height:300px;	
 	margin: auto;
+	background: linear-gradient(to bottom right ,#56A2CC,#FCF4A3);	
   }
 
- #demo img{
- width: 100%;
- height:300px;
- opacity:0.2;
- background-repeat: no-repeat;
-   }
 
 .card-header{
  background: linear-gradient(to bottom right ,#56A2CC,#FCF4A3);	
 }
 
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px; }
+
 address {
   font-size: 80%;
   margin: 0px;
-  color: #0f0f0f; }
+  color:#FCF4A3; }
 
 body {
   padding: 50px 0px 0px 0px;
@@ -90,7 +88,9 @@ body {
    margin: 0px auto;
   padding: 70px 30px;
   background-image: linear-gradient(to bottom right, #066E96, #56A2CC );
-  color:floralwhite;}
+  color:floralwhite;
+   border-top: 4px solid #FFCC00;
+}
  
 nav{
   background: #066E96;
@@ -220,6 +220,12 @@ font-weight: bold;
       text-align:left;
   }
 
+  .media img{
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+}
+
   .social-media{
   	display: grid;
   grid-gap: 10px;
@@ -245,8 +251,19 @@ font-weight: bold;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto ;
   }
+.media img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
 
+.media h4{
+	font-size: 1rem;
+}
 
+.media h5{
+	font-size: 1rem;
+}
 }
 
 @media only screen and (max-width: 1200px) {
@@ -279,6 +296,13 @@ font-weight: bold;
 }
 @media only screen and (max-width: 800px) {
 	.blockquote{
+ 	font-size:1rem;
+ }
+
+ .blockquote-footer{
+ 	font-size:0.8rem;
+ }
+ .h4{
  	font-size:1rem;
  }
 
@@ -327,18 +351,34 @@ font-weight: bold;
       height: 400px; 
       width: 300px;}
 
+  
+
 }
 
+@media only screen and (max-width: 1000px) {
+  .media img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.media h4{
+	font-size: 1rem;
+}
+
+.media h5{
+	font-size: 1rem;
+}
+}
 @media only screen and (max-width: 600px) {
 	#demo{
-  background: linear-gradient(to bottom right ,#56A2CC,#FFCC00);
+  background: linear-gradient(to bottom right ,#56A2CC,#FCF4A3);	
   	width:300px;
 	height:300px;	
 	margin: auto;
   }
 
-
-	.vertical { 
+.vertical { 
             border-left: 2px solid #56A2CC ; 
             height: 0px; 
             position:absolute; 
@@ -357,3 +397,6 @@ font-weight: bold;
 }
 
 	}
+
+
+
