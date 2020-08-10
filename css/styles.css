@@ -1,20 +1,359 @@
+.row-header {
+  margin: 0px auto;
+  padding: 0px 0px; }
+
+.heading{
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: auto;
+}
+
+.container{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.blockquote{
+	font-weight: bold;
+}
+
+.recents{
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+}
+.glow{
+	font-family:Berlin; color: floralwhite;
+}
+.glow:hover{
+  color: black;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff, 0 0 80px #fff;
+  }
+}
+.vertical { 
+            border-left: 2px solid #56A2CC ; 
+            height: 630px; 
+            position:absolute; 
+            left: 85%; 
+        } 
+
+.jumbotron {
+  margin: 0px auto;
+  padding: 70px 30px;
+  background-image: linear-gradient(to bottom ,rgba(6, 110, 150, 0.6),rgba(86, 162, 204, 0.6)), url('collage4.png');
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  background-size: 100% 100%;
+  color: floralwhite; }
+
+  #demo{
+  background: linear-gradient(to bottom right ,#56A2CC,#FCF4A3);
+  	width:550px;
+	height:300px;	
+	margin: auto;
+  }
+
+ #demo img{
+ width: 100%;
+ height:300px;
+ opacity:0.2;
+ background-repeat: no-repeat;
+   }
+
+.card-header{
+ background: linear-gradient(to bottom right ,#56A2CC,#FCF4A3);	
+}
+
+address {
+  font-size: 80%;
+  margin: 0px;
+  color: #0f0f0f; }
+
+body {
+  padding: 50px 0px 0px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 0; }
 
 .footer {
    margin: 0px auto;
   padding: 70px 30px;
   background-image: linear-gradient(to bottom right, #066E96, #56A2CC );
   color:floralwhite;}
-
-.jumbotron {
-  margin: 0px auto;
-  padding: 70px 30px;
-  background-image: linear-gradient(to bottom right, #066E96, #56A2CC );
-  color: floralwhite; }
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
+ 
+nav{
+  background: #066E96;
+  border-top: 4px solid #FFCC00;
+  
 }
 
-.nav{
-  background-color: #FFFFFF;
+nav .navbar-nav .nav-item .nav-link{
+	color: floralwhite;
 }
+#mycarousel{
+	margin-top: 10px;
+  background-image: linear-gradient(to bottom right, #066E96, #56A2CC ); }
+
+  .carousel .carousel-item {
+    height: 500px; }
+   .carousel .carousel-item .carousel-caption{
+   		top: 10%;
+      left: 58%;
+      height: 500px; 
+      width: 270px;
+       }
+    .carousel .carousel-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 500px; 
+      width: 410px;}
+
+#carouselButton {
+  right: 0px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1; }
+
+
+.flip-card {
+  background-color: transparent;
+  width: 260px;
+  height: 170px;
+  perspective: 1000px;
+}
+
+.flipimg{
+	width: 260px;
+  height: 170px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+h2{
+	color: #066E96;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+ background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back {
+background-image: linear-gradient(to bottom right, #066E96, #56A2CC );
+  color: white;
+  padding: 4px 1px 0px 0px;
+}
+
+.flip-card-back h6{
+color:#FFCC00; 
+font-weight: bold;
+}
+
+.flip-card-back p{
+	color: white;
+	font-weight: bold;
+}
+
+.Achievements {
+
+  list-style-type: none;
+  border: 1px solid #56A2CC  ;
+}
+
+
+.Achievements li:before {
+
+  content: '';
+
+  display: inline-block;
+
+  height: 15px;
+
+  width: 15px;
+
+   background-size: 15px;
+
+  background-image: url("logo2.png");
+
+  background-repeat: no-repeat;
+
+  margin-right: 5px;
+
+}
+.img1{
+      text-align:right;
+  }
+  .img2{
+      text-align:left;
+  }
+
+  .social-media{
+  	display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  }
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 500px) {
+  .heading{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  }
+  .img1{
+      text-align:center;
+  }
+  .img2{
+      text-align:center;
+  }
+  .social-media{
+  	display: grid;
+  grid-gap: 2px;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto ;
+  }
+
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+	.vertical { 
+            border-left: 2px solid #56A2CC ; 
+            height: 630px; 
+            position:absolute; 
+            left: 95%; 
+        } 
+	
+   .carousel {
+	margin-top: 10px;
+  background-image: linear-gradient(to bottom right, #066E96, #56A2CC ); }
+  .carousel .carousel-item {
+    height: 400px; }
+   .carousel .carousel-item .carousel-caption{
+   		top: 70%;
+      left: 30%;
+      height: 400px; 
+      width: 270px;
+       }
+    .carousel .carousel-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 400px; 
+      width: 620px;}
+
+}
+@media only screen and (max-width: 800px) {
+	.blockquote{
+ 	font-size:1rem;
+ }
+
+	.vertical { 
+            border-left: 2px solid #56A2CC ; 
+            height: 770px; 
+            position:absolute; 
+            left: 95%; 
+        } 
+	.flip-card {
+  background-color: transparent;
+  width: 170px;
+  height: 220px;
+  perspective: 1000px;
+}
+
+.footer iframe{
+	width: 200px;
+	height: 200px;
+}
+
+.flipimg{
+	width: 170px;
+  height: 220px;
+}
+	
+   .carousel {
+	margin-top: 10px;
+  background-image: linear-gradient(to bottom right, #066E96, #56A2CC ); 
+		height: 400px;
+    	width: 300px;
+		margin-left: 0px;}
+  .carousel .carousel-item {
+    height: 400px;
+    width: 300px; }
+   .carousel .carousel-item .carousel-caption{
+   		top: 60%;
+      left: 0;
+      height: 400px; 
+      width: 250px;
+       }
+    .carousel .carousel-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 400px; 
+      width: 300px;}
+
+}
+
+@media only screen and (max-width: 600px) {
+	#demo{
+  background: linear-gradient(to bottom right ,#56A2CC,#FFCC00);
+  	width:300px;
+	height:300px;	
+	margin: auto;
+  }
+
+
+	.vertical { 
+            border-left: 2px solid #56A2CC ; 
+            height: 0px; 
+            position:absolute; 
+            left: 95%; 
+        } 
+		.flip-card {
+  background-color: transparent;
+  width: 260px;
+  height: 170px;
+  perspective: 1000px;
+}
+
+.flipimg{
+	width: 260px;
+  height: 170px;
+}
+
+	}
