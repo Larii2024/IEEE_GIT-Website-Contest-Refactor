@@ -149,7 +149,7 @@ nav .navbar-nav .nav-item .nav-link{
       position: absolute;
       top: 0;
       left: 0;
-      height: 500px; 
+      height: 100%; 
       width: 410px;}
 
 #carouselButton {
