@@ -8,6 +8,26 @@
   grid-template-rows: auto;
 }
 
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
+
+#img1{
+      margin-left: 9rem;
+      width: 80px;
+      height: 80px;
+  }
+  #img2{
+      text-align:left;
+      width: 80px;
+      height: 80px;
+  }
+
 .container{
 	margin-top: 30px;
 	margin-bottom: 30px;
@@ -47,7 +67,7 @@
             left: 85%; 
         } 
 
-.jumbotron {
+.jumbotron1 {
   margin: 0px auto;
   padding: 70px 30px;
   background-image: linear-gradient(to bottom ,rgba(6, 110, 150, 0.6),rgba(86, 162, 204, 0.6)), url('collage4.png');
@@ -55,6 +75,16 @@
   opacity: 0.9;
   background-size: 100% 100%;
   color: floralwhite; }
+
+  .jumbotron2{
+  	 margin: 0px auto;
+  padding: 70px 30px;
+   background-image: linear-gradient(to bottom ,rgba(6, 110, 150, 0.6),rgba(86, 162, 204, 0.6)), url('collage4.png');
+  background-repeat: no-repeat;
+  opacity:1;
+  background-size: cover;
+  color: floralwhite;
+  }
 
   #demo{
   	width:600px;
@@ -66,6 +96,7 @@
 
 .card-header{
  background: linear-gradient(to bottom right ,#56A2CC,#FCF4A3);	
+ cursor:pointer;
 }
 
 .row-content {
@@ -103,7 +134,8 @@ nav .navbar-nav .nav-item .nav-link{
 }
 #mycarousel{
 	margin-top: 10px;
-  background-image: linear-gradient(to bottom right, #066E96, #56A2CC ); }
+  background-image: linear-gradient(to bottom right, #066E96, #56A2CC ); 
+   border-top: 4px solid #FFCC00;}
 
   .carousel .carousel-item {
     height: 500px; }
@@ -132,6 +164,7 @@ nav .navbar-nav .nav-item .nav-link{
   width: 260px;
   height: 170px;
   perspective: 1000px;
+  border-top: 4px solid #FFCC00;
 }
 
 .flipimg{
@@ -172,25 +205,27 @@ h2{
 }
 
 .flip-card-back {
-background-image: linear-gradient(to bottom right, #066E96, #56A2CC );
-  color: white;
+background-image: linear-gradient(to bottom right, #066E96 ,#56A2CC );
   padding: 4px 1px 0px 0px;
 }
 
 .flip-card-back h6{
-color:#FFCC00; 
-font-weight: bold;
+color:#ffcc00; 
+text-shadow: 1px 1px #000;
 }
 
 .flip-card-back p{
-	color: white;
-	font-weight: bold;
+	color: #fff;
+	
 }
 
 .Achievements {
 
   list-style-type: none;
-  border: 1px solid #56A2CC  ;
+  border: 3px solid #066E96;
+  padding: 5px 15px;
+  box-shadow: 6px 6px 4px #56A2CC;
+  /*border-top-color: #FFCC00;*/
 }
 
 
@@ -213,13 +248,6 @@ font-weight: bold;
   margin-right: 5px;
 
 }
-.img1{
-      text-align:right;
-  }
-  .img2{
-      text-align:left;
-  }
-
   .media img{
 	width: 160px;
 	height: 160px;
@@ -234,16 +262,19 @@ font-weight: bold;
   }
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 500px) {
-  .heading{
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto;
+  #img1{
+      margin-left:2px;
+      width: 55px;
+      height: 55px;
+
   }
-  .img1{
-      text-align:center;
+  #img2{
+      text-align:left;
+      width: 55px;
+      height: 55px;
   }
-  .img2{
-      text-align:center;
+  .heading h1{
+  	font-size: 1.5rem;
   }
   .social-media{
   	display: grid;
