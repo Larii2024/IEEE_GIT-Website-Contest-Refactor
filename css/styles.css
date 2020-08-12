@@ -90,7 +90,7 @@
   	width:600px;
 	height:300px;	
 	margin: auto;
-	background: linear-gradient(to bottom right ,#56A2CC,#FCF4A3);	
+	background: linear-gradient(to bottom right ,#066E96,#FCF4A3);	
   }
 
 
@@ -111,7 +111,7 @@ address {
   color:#FCF4A3; }
 
 body {
-  padding: 50px 0px 0px 0px;
+  padding: 20px 0px 0px 0px;
   font-family: Arial, Helvetica, sans-serif;
   z-index: 0; }
 
@@ -131,6 +131,10 @@ nav{
 
 nav .navbar-nav .nav-item .nav-link{
 	color: floralwhite;
+}
+
+.dropdown-item{
+	color: #066E96;
 }
 #mycarousel{
 	margin-top: 10px;
@@ -297,6 +301,14 @@ text-shadow: 1px 1px #000;
 }
 }
 
+.h4{
+	color:white;
+	font-size: normal;
+}
+.blockquote{
+	color: white;
+	font-size:normal;
+}
 @media only screen and (max-width: 1200px) {
 
 	.vertical { 
@@ -326,7 +338,20 @@ text-shadow: 1px 1px #000;
 
 }
 @media only screen and (max-width: 800px) {
+
+	#img1{
+      margin-left: 4rem;
+      width: 80px;
+      height: 80px;
+  }
+	 #demo{
+  	width:300px;
+	height:300px;	
+	margin: auto;
+	background: linear-gradient(to bottom right ,#066E96,#FCF4A3);	
+  }
 	.blockquote{
+		color: white;
  	font-size:1rem;
  }
 
@@ -334,6 +359,7 @@ text-shadow: 1px 1px #000;
  	font-size:0.8rem;
  }
  .h4{
+ 	color: white;
  	font-size:1rem;
  }
 
