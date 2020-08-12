@@ -6,6 +6,7 @@
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
   grid-template-rows: auto;
+
 }
 
 .card-columns {
@@ -18,12 +19,11 @@
 }
 
 #img1{
-      margin-left: 9rem;
+		margin-left:50%;
       width: 80px;
       height: 80px;
   }
   #img2{
-      text-align:left;
       width: 80px;
       height: 80px;
   }
@@ -266,19 +266,30 @@ text-shadow: 1px 1px #000;
   }
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 500px) {
+
+	.jumbotron1 h1{
+		font-size:1.5rem;
+	}
+.jumbotron1 h3{
+		font-size:1.2rem;
+	}
+	.jumbotron1 h5{
+		font-size:1rem;
+	}
   #img1{
-      margin-left:2px;
-      width: 55px;
-      height: 55px;
+      margin-left:25%;
+      width: 40px;
+      height: 40px;
 
   }
+
   #img2{
       text-align:left;
-      width: 55px;
-      height: 55px;
+      width: 40px;
+      height: 40px;
   }
   .heading h1{
-  	font-size: 1.5rem;
+  	font-size: 1rem;
   }
   .social-media{
   	display: grid;
@@ -338,12 +349,13 @@ text-shadow: 1px 1px #000;
 
 }
 @media only screen and (max-width: 800px) {
-
-	#img1{
-      margin-left: 4rem;
+	 #img1{
+      margin-left:35%;
       width: 80px;
       height: 80px;
+
   }
+
 	 #demo{
   	width:300px;
 	height:300px;	
