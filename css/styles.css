@@ -29,8 +29,7 @@
   }
 
 .container{
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin:auto;
 }
 
 
@@ -62,7 +61,7 @@
 }
 .vertical { 
             border-left: 2px solid #56A2CC ; 
-            height: 630px; 
+            height: 650px; 
             position:absolute; 
             left: 85%; 
         } 
@@ -77,8 +76,8 @@
   color: floralwhite; }
 
   .jumbotron2{
-  	 margin: 0px auto;
-  padding: 70px 30px;
+  margin: 0px auto;
+  padding: 20px 30px;
    background-image: linear-gradient(to bottom ,rgba(6, 110, 150, 0.6),rgba(86, 162, 204, 0.6)), url('collage4.png');
   background-repeat: no-repeat;
   opacity:1;
@@ -351,9 +350,6 @@ text-shadow: 1px 1px #000;
 @media only screen and (max-width: 800px) {
 	 #img1{
       margin-left:35%;
-      width: 80px;
-      height: 80px;
-
   }
 
 	 #demo{
@@ -377,14 +373,14 @@ text-shadow: 1px 1px #000;
 
 	.vertical { 
             border-left: 2px solid #56A2CC ; 
-            height: 770px; 
+            height: 650px; 
             position:absolute; 
             left: 95%; 
         } 
 	.flip-card {
   background-color: transparent;
-  width: 170px;
-  height: 220px;
+  width: 300px;
+  height: 170px;
   perspective: 1000px;
 }
 
@@ -394,22 +390,22 @@ text-shadow: 1px 1px #000;
 }
 
 .flipimg{
-	width: 170px;
-  height: 220px;
+	width: 300px;
+  height: 170px;
 }
 	
    .carousel {
 	margin-top: 10px;
   background-image: linear-gradient(to bottom right, #066E96, #56A2CC ); 
 		height: 400px;
-    	width: 300px;
-		margin-left: 0px;}
+    	width: 500px;
+		}
   .carousel .carousel-item {
     height: 400px;
-    width: 300px; }
+    width: 500px; }
    .carousel .carousel-item .carousel-caption{
    		top: 60%;
-      left: 0;
+      left: 20%;
       height: 400px; 
       width: 250px;
        }
@@ -418,7 +414,7 @@ text-shadow: 1px 1px #000;
       top: 0;
       left: 0;
       height: 100%; 
-      width: 300px;}
+      width: 500px;}
 
   
 
@@ -446,6 +442,29 @@ text-shadow: 1px 1px #000;
 	height:300px;	
 	margin: auto;
   }
+
+   .carousel {
+	margin-top: 10px;
+  background-image: linear-gradient(to bottom right, #066E96, #56A2CC ); 
+		height: 400px;
+    	width: 300px;
+		}
+  .carousel .carousel-item {
+    height: 400px;
+    width: 300px; }
+   .carousel .carousel-item .carousel-caption{
+   		top: 60%;
+      left: 0%;
+      height: 400px; 
+      width: 250px;
+       }
+    .carousel .carousel-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%; 
+      width: 300px;}
+
 
 .vertical { 
             border-left: 2px solid #56A2CC ; 
